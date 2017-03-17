@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <style>
+     
+     #logo{
+     height:400px;
+     width:500px;
+     margin-left:450px;
+     }
+     #buttons{
+     height:50px;
+     width:50px;
+     margin-left:550px;
+     }
+     #play{
+     font-family: Verdana, Helvetica, Arial, sans-serif;
+     padding:20px;
+     background-color:red;
+     color:black;
+     border-radius:90%;
+     border:none;
+     }
+    </style>
+    <script>
+      window.onload= init;
+      function init(){
+        var play= document.getElementById("play");
+        play.onclick=function(){window.location.href="memory.html"};
+      }
+    </script>
+ </head>
+
+ <body>
+  <div id="logo">
+  <img src="images/memory.png">
+  </div>
+  <div id="buttons">
+  <form>
+    <input type="button" id="play" value="Play Game">
+  </form>
+  </div>
+</body>
+</html>
